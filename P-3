@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY PROFILE</title>
+</head> <style> th{ font-family:"Great Vibes", cursive;
+}
+td{ font-family:"Great Vibes", cursive;
+}
+</style>
+<body bgcolor="skyblue">
+<table border="2" align="center">
+<tr>
+<th bgcolor="navyblue" colspan="3">MY PROFILE</th>
+</tr>
+<td>
+<b><u>Image:</u></b>
+<center>
+<img src="D:\IMG_3855.jpeg" height="150px" width="110px">
+</center>
+</td>
+<td height="150px" width="110px">
+<b><u>Personal Info:</u></b><br><br>
+Name:Aanandha Krishnan.V<br><br>Reg-no:23247005<br><br>Address:Chidambaram</td> <tr>
+<td rowspan="2" height="80px" width="80px">
+<b><u>Hobbies:</u></b><br>
+<ul>
+<li>Anime</li>
+<li>Gaming</li>
+<li>Reading</li>
+</ul>
+</td></tr>
+<tr>
+<td height="80px" width="80px">
+<b><u>Skills:</u></b><br>
+<ul>
+<li>Python</li>
+<li>HTML</li>
+<li>Java</li>
+</ul>
+</td></tr>
+<tr>
+<td colspan="2">
+<b><u>Latest Watched Movie:</u></b>
+<ul>
+<li>A Whisker Away</li>
+</ul>
+</td></tr>
