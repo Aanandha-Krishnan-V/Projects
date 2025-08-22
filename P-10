@@ -1,0 +1,76 @@
+React Components
+App.js:
+import React, { Component } from 'react';
+class MyDetails extends Component {
+constructor(props) {
+super(props);
+this.state = {
+showDetails: false
+};
+this.handleClick = this.handleClick.bind(this);
+}
+handleClick() {
+this.setState((prevState) => ({ showDetails: !prevState.showDetails }));
+}
+render() {
+return (
+<div>
+<table style={{ width: '100%', border: '2px solid black' }}>
+<tbody>
+<tr>
+<td style={{ width: '50%', border: '1px solid black' }}>
+<img src="Aanandh img.jpg" alt="" style={{ height: "250px", width: "250px" }} />
+</td>
+<td style={{ width: '50%', border: '1px solid black', verticalAlign: 'top' }}>
+<button onClick={this.handleClick}>
+{this.state.showDetails ? 'Hide Details' : 'Show Details'}
+</button>
+{this.state.showDetails && (
+<div>
+<h3>Name</h3>
+<p>Aanandha Krishnan V </p>
+<h3>Email:</h3>
+<p><a href="anandhkrishna.v@gmail.com">anandhkrishna.v@gmail.com</a></p>
+</div>
+)}
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+);
+}
+}
+export default MyDetails;
+Layout
+Index.js:
+// Import React and ReactDOM
+import React from 'react';
+import ReactDOM from 'react-dom';
+// Import your main App component
+import App from './App';
+// Render the App component into the root element of the HTML
+ReactDOM.render(
+<React.StrictMode>
+<App />
+</React.StrictMode>,
+document.getElementById('root')
+);
+Index.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Web site created using create-react-app"/>
+<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+<title>React App</title>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+</body>
+</html>
