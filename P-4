@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Skills</title>
+</head>
+<style> th{ font-family:"Great Vibes", cursive;
+}
+td{ font-family:"Great Vibes", cursive;
+}
+.span{ float:right;
+}
+h1,h2{ font-size:20px;
+}
+</style>
+<body bgcolor="skyblue">
+<table border="2" align="center">
+<tr>
+<td colspan="2" bgcolor="navyblue">
+Aanandha Krishnan.V <span class="span">23247005</span>
+</tr>
+</td>
+<tr>
+<td rowspan="2">
+<h1><u>Without Coding:</u></h1>
+<ul><li>
+<b>Network administrator</b>
+<ul>
+<li>Problem solving</li>
+<li>Maintain and troubleshoot</li>
+</ul>
+</li>
+<li><b>Designer</b>
+<ul>
+<li>Creativity</li>
+<li>Visual communication</li>
+</ul>
+</li>
+<li><b>Database administrator</b>
+<ul>
+<li>Attention to details</li>
+<li>Develop database utilities</li>
+</ul>
+</li>
+<li><b>Game tester</b>
+<ul>
+<li>Analytical thinking</li>
+<li>Techinical knowledge</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<h1><u>With Coding:</u></h1>
+<ul><li>
+<b>Data scientist</b>
+<ul>
+<li>Statistics knowledge</li>
+<li>Machine learning</li>
+</ul>
+</li>
+<li><b>Security analyst</b>
+<ul>
+<li>Communication skill</li>
+<li>Analytical skill</li>
+</ul>
+</li>
+<li><b>Mobile app development</b>
+<ul>
+<li>Backend</li>
+<li>Designing</li>
+</ul>
+</li>
+<li><b>Gaming developer</b>
+<ul>
+<li>Creativity</li>
+<li>Knowledge of trends</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
