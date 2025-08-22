@@ -1,0 +1,101 @@
+App.js:
+// App.js
+import React from 'react';
+import TableComponent from './TableComponent';
+import PhotoComponent from './PhotoComponent';
+import DetailsComponent from './DetailsComponent';
+const App = () => {
+return (
+<div>
+<h1>Static page</h1>
+<TableComponent
+photo={<PhotoComponent />}
+details={<DetailsComponent />}
+/>
+</div>
+);
+};
+export default App;
+DetailsComponent.js:
+// DetailsComponent.js
+import React from 'react';
+const DetailsComponent = () => {
+return (
+<div>
+<h2>My Details</h2>
+<p>Name: Aanandha Krishnan V </p>
+<p>Email: anandhkrishna.v@gmail.com </p>
+<p>Course: MCA</p>
+<p>Location: Chidambaram</p>
+</div>
+);
+};
+export default DetailsComponent;
+PhotoComponent.js:
+// PhotoComponent.js
+import React from 'react';
+const PhotoComponent = () => {
+return (
+<img src="Aanandh img.jpg" alt="" style={{ height: '250px', width: '250px' }} />
+);
+};
+export default PhotoComponent;
+TableComponent.js:
+// TableComponent.js
+import React from 'react';
+const TableComponent = ({ photo, details, }) => {
+return (
+<table style={{ border: '1px solid black', width: "100%" }}>
+<tbody>
+<tr>
+<td style={{ width: "50%", borderRight: '1px solid black' }}>
+{photo}
+</td>
+<td style={{ width: '50%', textAlign: 'center' }}>
+{details}
+</td>
+</tr>
+<tr>
+<td colSpan="2">
+</td>
+</tr>
+</tbody>
+</table>
+);
+};
+export default TableComponent;
+Layout
+Index.js:
+import React, { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./app";
+const root = createRoot(document.getElementById("root"));
+root.render(
+<StrictMode>
+<details/>
+<table comp/>
+<photocomp/>
+<App />
+</StrictMode>
+);
+Index.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#000000" />
+<meta
+name="description"
+content="Web site created using create-react-app"
+/>
+<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+<title>React App</title>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+</body>
+</html>
