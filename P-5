@@ -1,0 +1,44 @@
+<html>
+<head>
+<title> SWOT ANALYSIS</title>
+</head>
+<style>
+.c{ text-align: center; font-family:"Great Vibes", cursive;
+}
+.s{
+height:35%; width:25%;
+float:left;
+background-color:ee75ee;
+}
+.w{ height:35%; width:25%;
+float:left;
+background-color:ee8eee;
+} .o{
+height:35%; width:25%;
+float:left;
+background-color:eea5ee;
+}
+.t{
+height:35%; width:25%;
+float:left;
+background-color:eeb5ee;
+}
+span{
+float:right;
+}
+</style>
+<body bgcolor="skyblue">
+<div><h2 align="left">Aanandha Krishnan.V <span class="span">23247005</span></h2></div>
+<div><h1 align="center"><u>SWOT ANALYSIS</u></h1></div>
+<div class="s"><h3 class="c">STRENGTH</h3><ul type="circle">
+<br><li>Communication skill</li></br>
+<li>Leadership</li></div>
+<div class="w"><h3 class="c">WEAKNESS</h3><ul type="circle">
+<br><li>Lazy</li></br>
+<li>Procasination</li></div>
+<div class="o"><h3 class="c">OPPURTUNITY</h3><ul type="circle">
+<br><li>Frotnend</li></br>
+<li>Python</li></div>
+<div class="t"><h3 class="c">THREATS</h3><ul type="circle">
+<br><li>Overthinking</li></br>
+<li>Unexpected situations</li></div>
