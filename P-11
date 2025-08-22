@@ -1,0 +1,66 @@
+APP.JSX:
+import React, { useEffect, useState } from 'react'; function App() { const [data, setData] = useState([]);
+useEffect(() => { fetch('http://localhost:8081/users') .then(res => res.json()) .then(data => setData(data))
+.catch(err => console.log(err));
+}, [])
+return (
+<React.Fragment>
+<div style={{ padding: '50px' }}>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>name</th>
+<th>Phone</th>
+<th>email</th>
+</tr>
+</thead>
+<tbody>
+{data.map((d, i) => (
+<tr key={i}>
+<td>{d.id}</td>
+<td>{d.name}</td>
+<td>{d.phone}</td>
+<td>{d.email}</td>
+</tr>
+))}
+</tbody>
+</table>
+</div>
+</React.Fragment>
+);
+}
+export default App
+Layout Index.js:
+import React from 'react' import ReactDOM from
+'react-dom/client' import App from './App.jsx'
+import
+'./index.css'
+ReactDOM.createRoot(document.getElementById('root')).render(
+<React.StrictMode>
+<App />
+</React.StrictMode>,
+)
+Server.js const express =
+require('express'); const mysql =
+require('mysql'); const cors =
+require('cors'); const app = express();
+// Use CORS to allow requests from the frontend
+app.use(cors()); const connection =
+mysql.createConnection({
+host: 'localhost', user: 'root', password: '', // replace with
+your MySQL password database: 'users'
+});
+app.get('/',(re,res)=>{ return
+res.json("from backend side")
+})
+app.get('/users',(req,res)=>{
+const sql="SELECT * FROM
+users"; db.query(sql,(err,data)=>{
+if(err) return res.json(err);
+return res.json(data);
+})
+})
+app.listen(8081,()=>{
+console.log("listening");
+})
