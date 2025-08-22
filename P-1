@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Self Analysis Report</title> <style> body{ fontfamily: Arial, sans-serif; margin: 15px;
+}
+h1{
+text-align: center;
+}
+.Strengths, .Weakness, .Oppurtunities, .Targets{ marginbottom:
+20px;
+}
+.section-title{
+fontsize: 22px; fontweight:
+bold;
+marginbottom: 15px;
+}
+.list-item{
+margin-bottom: 15px;
+}
+</style>
+</head>
+<body style="background-color: skyblue;">
+<h1><u>Aanandha Krishnan’s Self Analysis Report</u></h1>
+<div class="Strengths">
+<div class="section-title">Strenghts:</div>
+<ul>
+<li class="list-item">Time Management</li>
+<li class="list-item">Problem Solving</li>
+</ul>
+<div>
+<div class="Weakness">
+<div class="section-title">Weakness:</div>
+<ul>
+<li class="list-item">Interaction</li>
+<li class="list-item">Communication</li>
+</ul>
+</div>
+<div class="Oppurtunities">
+<div class="section-title">Oppurtunities:</div>
+<ul>
+<li class="list-item">Front-End</li>
+<li class="list-item">Python</li>
+</ul>
+</div>
+<div class="Targets">
+<div class="section-title">Targets:</div>
+<ul>
+<li class="list-item">Self Development</li>
+</ul>
+</div>
