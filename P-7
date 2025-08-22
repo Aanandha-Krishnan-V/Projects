@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Resume</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.5.1/css/all.min.css" integrity="sha512-
+DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13T Zye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0alpha1/css/bootstrap.min.css" integrity="sha384-
+r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<style> body { font-family: Arial, sans-serif; background-color: skyblue;
+}
+section { padding: 50px 0;
+}
+h2 {
+font-size: 36px;
+font-weight: bold; margin-bottom: 30px;
+}
+p {
+font-size: 18px; line-height: 1.5;
+} ul {
+list-style-type: none; padding-left: 0;
+}
+.nav-tabs {
+border-bottom: none;
+}
+.nav-tabs .nav-link { font-size: 18px; font-weight: bold; border: none; border-radius: 0; padding: 10px 20px; margin-right: 10px; color: #333;
+}
+.nav-tabs .nav-link.active { background-color: #f8f8f8;
+}
+.tab-pane { margin-top: 30px;
+}
+.collapse {
+margin-bottom: 30px;
+}
+.modal-dialog { max-width: 500px;
+}
+.modal-title { font-weight: bold; margin-bottom: 20px;
+}
+.h4,h1{ font-family: cursive;
+}
+.h1,h4{ font-family: cursive;
+}
+</style>
+</head>
+<body>
+<header class="bg-alert bg-gradient text-white py-5" id="about">
+<div class="container">
+<div class="row">
+<div class="col-md-3 text-left text-md-center mb-3">
+<img class="rounded-circle img-fluid" src="C:\Users\WELCOME\Desktop\Aanandh .jpg" alt="Profile Photo">
+</div>
+<div class="col-md-9">
+<h1>Aanandha Krishnan.V</h1>
+<h5>Fullstack</h5>
+<p class="border-top pt-3" id="about">
+As a dedicated web developer, I thrive on turning ideas into functional and visually appealing websites. My journey began with a fascination for the intricacies of code, and over the years, I’ve honed my skills to create seamless user experiences.
+</p>
+</div>
+</div>
+</div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container">
+<!-- Brand/logo -->
+<a class="navbar-brand" href="#">My Resume</a>
+<!-- Toggler button for mobile -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" datatarget="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Navbar content -->
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#skills">Skills</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#Education">Education</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#project">Project</a>
+</li>
+</ul>
+</div>
+</nav>
+<section id="skills" class="container">
+<h2>Skills</h2>
+<ul class="nav nav-tabs">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#front-end">Front-end Development</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#back-end">Back-end Development</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="front-end">
+<h3>Front-end Development</h3>
+<ul>
+<li data-toggle="tooltip" title="Hyper Text Markup Language">HTML</li>
+<li data-toggle="tooltip" title="Cascading Style Sheets">CSS</li>
+<li>JavaScript</li>
+</ul>
+</div>
+<div class="tab-pane fade" id="back-end">
+<h3>Back-end Development</h3>
+<ul>
+<li data-toggle="tooltip" title="Hypertext Preprocessor">Python</li>
+<li>java</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section id="Education" class="container">
+<h2>Education</h2>
+<button class="btn btn-secondary dropdown-toggle" data-toggle="collapse" datatarget="#school" aria-expanded="false">School</button>
+<div class="collapse" id="school">
+<h4>SSLC</h4>
+<ul>
+<li>Name of Institution:Thillai Matriculation School <br>Chidambaram,TamilNadu </li>
+<li>Year of passing:2017</li>
+<li></li>
+</ul>
+<h4>HSC</h4>
+<ul>
+<li>Name of Institution:Sowdambikaa Matric Hr.Sec School <br> Thuraiyur,TamilNadu</li>
+<li>Year of passing:2019</li>
+<li></li>
+</ul>
+</div>
+<button class="btn btn-secondary dropdown-toggle" data-toggle="collapse" datatarget="#university" aria-expanded="false">University</button>
+<div class="collapse" id="university">
+<h4>Bsc.Mathematics</h4>
+<ul>
+<li>Name of Institution:Bishop Heber College</li>
+<li>Year of passing:2023</li>
+<li>Percentage:7.8cgpa</li>
+<li>University:Baradhidhasan University</li>
+</ul>
+<h4>MCA</h4>
+<ul>
+<li>Name of Institution:Hindustan Institute of Technology and science,Chennai</li>
+<li>Year of passing:2025</li>
+<li>University:Hindustan University</li>
+</ul>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="container">
+<h2>Contact</h2>
+<div class="contact-info">
+<i class="fas fa-envelope"></i> Email: <a
+href="mailto:anandhkrishna.v@gmail.com">anandhkrishna.v@gmail.com</a>
+</div>
+<br>
+<div class="contact-info">
+<i class="fas fa-phone"></i> Phone: <a href="tel:+1234567890">(123) 456-7890</a>
+</div>
+<br>
+<div class="contact-info">
+<i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">LinkedIn Profile</a>
+</div>
+</ul>
+</section>
+<!-- Carousel Section -->
+<section id="project" class="container">
+<h2>Project</h2>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<h4>Voice based image search</h4>
+<p>using</p>
+<ul>
+<li>HTML</li>
+<li>JavaScript</li>
+<li>Python</li>
+</ul>
+</div>
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/poppercore.min.js"></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
