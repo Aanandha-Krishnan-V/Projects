@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fontawesome.min.css">
+<style>
+.input-container { text-align: center; display: inline-flex;
+font-family: Times new Roman, arial; width: 100%;
+}
+.icon {
+padding: 2px; background: #9370D8;
+color: black;
+min-width:60x; text-align: center;
+margin-bottom: 5px; margin-top: 5px; border: outset;
+}
+.button {
+margin-top: 10px; color: black; text-align: left;
+padding: 1px 10px;
+border: orange;
+}
+.text{ text-align: right; padding: 0px 20px;
+}
+.span{ float:right;
+}
+</style>
+</head>
+<body bgcolor="eeb5ee">
+<h2>Contact Us Today! <span class="span">For quiries contact us via: abc@gmail.com</span></h2>
+<form>
+<center>
+<table border="0">
+<tr>
+<div class="input-container">
+<td><p class="text">First name</p></td><td><i class="fa fa-user"></i>
+<input type= "textbox" name="fname" placeholder="First name">
+</td>
+</div>
+</tr>
+<tr>
+<div class="input-container">
+<td><p class="text"> Last name</p></td><td><i class="fa fa-user"></i>
+<input type="textbox" name="lname" placeholder="Last name">
+</td>
+</div>
+</tr>
+<tr>
+<div class="input-container">
+<td><p class="text">E-Mail</p></td><td><i class="fa fa-envelope"></i>
+<input type="email" name="email" placeholder="E-Mail Address">
+</td>
+</div>
+</tr>
+<tr>
+<div class="input-container">
+<td><p class="text">Phone</p> </td><td><i class="fa fa-mobile"></i>
+<input type="number" name="number" placeholder="(+91)123-45-6789">
+</td>
+</div>
+</tr>
+<tr>
+<div class="input-container">
+<td> <p class="text">Address</p></td><td><i class="fa fa-home"></i>
+<input type="addres" name="address" placeholder="Address">
+</td>
+</div>
+</tr>
+<tr>
+<div class="input-container">
+<td><p class="text">City</p> </td><td><i class="fa fa-building"></i>
+<input type="textbox" name="city" placeholder="City">
+</td>
+</div>
+</tr>
+<tr>
+<div class="input-container" width="100px">
+<td><p class="text">State</p></td><td><i class="fa fa-buiding"></i>
+<select name="state" placeholder="Please select your state">
+<option value="Tamil nadu">Tamil nadu</option>
+<option value="Kerala">Kerala</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Mumbai">Goa</option>
+<option values="Delhi">Delhi</option>
+</select>
+</td>
+</div>
+</tr>
+<tr>
+<div class="input-container">
+<td><p class="text">Pin Code </p></td><td><i class="fa fa-file-zip-o"></i>
+<input type="number" name="Pin code" placeholder="Pin Code">
+</td>
+</div>
+</tr>
+<tr>
+<div class="input-container">
+<td><p class="text">Website Name</p</td><td><i class="fa fa-globe"></i>
+<input type="textbox" name="number" placeholder="Website Name">
+</td>
+</div>
+</tr>
+<tr>
+<div class="input-container">
+<td><p class="text">Number of Projects</p></td><td>
+<input type="radio" name="Project" value="None">
+<label>None</label>
+<input type="radio" name="Project" value="1 or More">
+<label>1 or More</label>
+</td>
+</div>
+</tr>
+<tr>
+<div class="input-container">
+<td><p class="text">Project Description</p></td>
+<td><i class="fa fa-pencil"></i>
+<textarea name="area" placeholder="Project Description"></textarea>
+</td>
+</div>
+</tr>
+<tr>
+<td></td><td>
+<div>
+<button class="button">send<i class="fa fa-submit"></i></button>
+</div>
+</tr>
+</center>
+</table>
+</form>
+</body>
+</html>
