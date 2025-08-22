@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transfer Amount</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+margin: 0;
+padding: 0;
+}
+.container {
+max-width: 500px;
+margin: 50px auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+text-align: center;
+}
+form {
+margin-top: 20px;
+}
+label {
+display: block;
+margin-bottom: 5px;
+}
+input[type="text"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 3px;
+box-sizing: border-box;
+}
+input[type="button"] {
+width: 100%;
+padding: 10px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
+input[type="button"]:hover {
+background-color: #0056b3;
+}
+.error {
+color: red;
+font-size: 12px;
+}
+</style>
+<script src="valid.js"></script>
+</head>
+<body>
+<div class="container">
+<h2>Transfer Amount</h2>
+<form id="transferForm" action="sucess.html" method="post">
+<label for="senderName">Sender Name:</label>
+<input type="text" id="senderName" name="senderName">
+<span id="senderNameError" class="error"></span>
+<label for="senderAccNum">Sender Account Number:</label>
+<input type="text" id="senderAccNum" name="senderAccNum">
+<span id="senderAccNumError" class="error"></span>
+<label for="amount">Amount:</label>
+<input type="text" id="amount" name="amount">
+<span id="amountError" class="error"></span>
+<label for="receiverAccNum">Receiver Account Number:</label>
+<input type="text" id="receiverAccNum" name="receiverAccNum">
+<span id="receiverAccNumError" class="error"></span>
+<input type="button" value="Submit" onclick="validateForm()">
+</form>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transfer Confirmation</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+margin: 0;
+padding: 0;
+}
+.container {
+max-width: 500px;
+margin: 50px auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+text-align: center;
+}
+p {
+text-align: center;
+font-size: 18px;
+color: #007bff;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Transfer Confirmation</h2>
+<p>Your transfer has been successfully processed.</p>
+<!-- You can add additional content here such as transaction details, links, etc. -->
+</div>
+</body>
+</html>
+Validation Logic (Java Script):
+function validateForm() {
+var senderName = document.getElementById("senderName").value;
+var senderAccNum = document.getElementById("senderAccNum").value;
+var amount = document.getElementById("amount").value;
+var receiverAccNum = document.getElementById("receiverAccNum").value;
+var errorFlag = false;
+var nameRegex = /^[A-Za-z ]{3,}$/;
+var accNumRegex = /^\d{10}$/;
+var amountRegex = /^[1-9]\d{0,5}$/;
+if (!nameRegex.test(senderName)) {
+document.getElementById("senderNameError").innerHTML = "Sender name must be at least 3
+characters long and contain only letters";
+errorFlag = true;
+} else {
+document.getElementById("senderNameError").innerHTML = "";
+}
+if (!accNumRegex.test(senderAccNum)) {
+document.getElementById("senderAccNumError").innerHTML = "Sender account number must
+be exactly 10 digits";
+errorFlag = true;
+} else {
+document.getElementById("senderAccNumError").innerHTML = "";
+}
+if (!amountRegex.test(amount)) {
+document.getElementById("amountError").innerHTML = "Amount must be a number greater
+than 1 and less than 200,000";
+errorFlag = true;
+} else {
+document.getElementById("amountError").innerHTML = "";
+}
+if (!accNumRegex.test(receiverAccNum)) {
+document.getElementById("receiverAccNumError").innerHTML = "Receiver account number
+must be exactly 10 digits";
+errorFlag = true;
+} else {
+document.getElementById("receiverAccNumError").innerHTML = "";
+}
+if (!errorFlag) {
+document.getElementById("transferForm").submit();
+}
+}
